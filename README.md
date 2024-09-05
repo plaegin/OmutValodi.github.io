@@ -1,2 +1,2 @@
 # OmutValodi.github.io
-Website of fking idiots
+Это вебсайт дебилов
