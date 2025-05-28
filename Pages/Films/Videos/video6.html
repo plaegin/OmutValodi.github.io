@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мистраль и Райден осознали себя в RYTP (Wall-E - классный мульт, кстати)</title>
+  <style>
+    :root {
+      --bg: #f4f4f9;
+      --text: #333;
+      --card: #fff;
+      --accent: #0077cc;
+      --secondary: #666;
+    }
+
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #f0f0f0;
+      --card: #2a2a2a;
+      --accent: #62aaff;
+      --secondary: #aaa;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+		.nav-buttons {
+	  position: absolute;
+	  top: 1rem;
+	  left: 1rem;
+	  display: flex;
+	  flex-direction: column;
+	  gap: 0.5rem;
+	}
+
+	.nav-button {
+	  background-color: var(--card);
+	  color: var(--accent);
+	  border: 1px solid #ccc;
+	  border-radius: 8px;
+	  padding: 0.4rem 0.8rem;
+	  text-decoration: none;
+	  font-weight: bold;
+	  transition: background-color 0.2s;
+	}
+
+	.nav-button:hover {
+	  background-color: #e0eaff;
+	}
+
+    .home-button, .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      background-color: var(--card);
+      color: var(--accent);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      cursor: pointer;
+    }
+
+    .home-button:hover, .theme-toggle:hover {
+      background-color: #e0eaff;
+    }
+
+    .home-button {
+      left: 1rem;
+    }
+
+    .theme-toggle {
+      right: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      background-color: var(--card);
+      border: 1px solid #ccc;
+      padding: 1rem 1.5rem;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .video-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .video-item {
+      background-color: var(--card);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 8px;
+      outline: none;
+      margin-bottom: 0.8rem;
+    }
+
+    .video-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+
+    .video-description {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .video-date {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.5rem;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .description {
+        font-size: 0.95rem;
+      }
+
+      .home-button, .theme-toggle {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+      }
+
+      .scroll-top {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-buttons">
+  <a href="../../../index.html" class="nav-button">Омут</a>
+  <a href="../films.html" class="nav-button">Фильмография</a>
+</div>
+
+  <div class="video-list">
+    <div class="video-item">
+      <video controls poster="Thumbnails/video6.jpg">
+        <source src="Videos/video6.mp4" type="video/mp4">
+      </video>
+      <div class="video-title">Мистраль и Райден осознали себя в RYTP (Wall-E - классный мульт, кстати)</div>
+      <div class="video-description">Почему бы и нет. Всё ок, только на большом экране сильно видно квадраты от грин-скрина. Переделывать не буду, мне и так нравится.
+		
+		</div>
+      <div class="video-date">2022 год</div>
+    </div>
+  </div>
+  
+</body>
+</html>

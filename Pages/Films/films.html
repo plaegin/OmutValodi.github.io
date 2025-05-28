@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Фильмография Омута</title>
+  <style>
+    :root {
+      --accent: #0077cc;
+      --card: #ffffff;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-buttons {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .nav-button {
+      background-color: var(--card);
+      color: var(--accent);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .nav-button:hover {
+      background-color: #e0eaff;
+    }
+
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    .toggle-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .toggle-button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #aaa;
+      background-color: #fff;
+      color: #333;
+      cursor: pointer;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .toggle-button:hover {
+      background-color: #e0eaff;
+    }
+
+    .films {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+	
+	 .videos {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: left;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .film, .video {
+      text-align: center;
+      width: 200px;
+    }
+
+    .film img, .video img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      transition: transform 0.2s;
+    }
+
+    .film img:hover, .video img:hover {
+      transform: scale(1.05);
+    }
+
+    .film a, .video a {
+      display: block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .film a:hover, .video a:hover {
+      color: #0077cc;
+    }
+
+    .active {
+      display: flex;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      .film, .video {
+        width: 120px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-buttons">
+    <a href="../../index.html" class="nav-button">Омут</a>
+  </div>
+
+  <header>Фильмография Омута</header>
+
+  <!-- Кнопки переключения -->
+  <div class="toggle-buttons">
+    <button class="toggle-button" onclick="showSection('videos')">Видео</button>
+    <button class="toggle-button" onclick="showSection('playlists')">Плейлисты</button>
+  </div>
+
+  <!-- Плейлисты -->
+  <section class="films active" id="playlists">
+    <div class="film">
+      <a href="Playlists/allVideos.html">
+        <img src="Images/p1.png" alt="Вся фильмография Омута">
+        <span>Вся Фильмография Омута</span>
+      </a>
+    </div>
+    
+	<div class="film">
+      <a href="Playlists/FindingAlexey.html">
+        <img src="Images/p2.png" alt="Вселенная Поисков Лёхи">
+        <span>Вселенная "Поисков Лёхи"</span>
+      </a>
+    </div>
+	
+	<div class="film">
+      <a href="Playlists/MGR.html">
+        <img src="Images/p3.png" alt="МГР по версии Омута">
+        <span>МГР по версии Омута</span>
+      </a>
+    </div>
+	
+	<div class="film">
+      <a href="Playlists/AntonEgo.html">
+        <img src="Images/p4.png" alt="Отзывы Антона Эго">
+        <span>Отзывы Антона Эго</span>
+      </a>
+    </div>
+	
+	<div class="film">
+      <a href="Playlists/CoolStory.html">
+        <img src="Images/p5.png" alt="КулСтори">
+        <span>КулСтори</span>
+      </a>
+    </div>
+	
+	<div class="film">
+      <a href="Playlists/CriminalScum.html">
+        <img src="Images/p6.png" alt="Криминал Скам">
+        <span>Криминал Скам</span>
+      </a>
+    </div>
+	
+	<div class="film">
+      <a href="Playlists/RGM.html">
+        <img src="Images/p7.png" alt="атумО иисрев оп РГМ">
+        <span>атумО иисрев оп РГМ</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Видео -->
+  <section class="videos" id="videos">
+  
+    <div class="video">
+      <a href="Videos/video8.html">
+        <img src="Videos/Thumbnails/video8.jpg" alt="Первый отзыв Антуана Эго о Вкусе Очка" />
+        <span>Первый отзыв Антуана Эго о Вкусе Очка</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video7.html">
+        <img src="Videos/Thumbnails/video7.jpg" alt="Китайская Притча" />
+        <span>Китайская Притча</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video6.html">
+        <img src="Videos/Thumbnails/video6.jpg" alt="Мистраль и Райден осознали себя в RYTP (Wall-E - классный мульт, кстати)" />
+        <span>Мистраль и Райден осознали себя в RYTP (Wall-E - классный мульт, кстати)</span>
+      </a>
+    </div>
+  
+  
+    <div class="video">
+      <a href="Videos/dopVideo2.html">
+        <img src="Videos/Thumbnails/dopVideo2.jpg" alt="Reversed МГР по версии Омута. Часть II: Лёха" />
+        <span>Reversed МГР по версии Омута. Часть II: Лёха</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video5.html">
+        <img src="Videos/Thumbnails/video5.jpg" alt="МГР по версии Омута. Часть II: Лёха" />
+        <span>МГР по версии Омута. Часть II: Лёха</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/dopVideo1.html">
+        <img src="Videos/Thumbnails/dopVideo1.jpg" alt="Reversed МГР по версии Омута. Часть I: Никич" />
+        <span>Reversed МГР по версии Омута. Часть I: Никич</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video4.html">
+        <img src="Videos/Thumbnails/video4.jpg" alt="МГР по версии Омута. Часть I: Никич" />
+        <span>МГР по версии Омута. Часть I: Никич</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video3.html">
+        <img src="Videos/Thumbnails/video3.jpg" alt="Сэм vs Райден, но бюджет равен 0)" />
+        <span>Сэм vs Райден, но бюджет равен 0</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video2.html">
+        <img src="Videos/Thumbnails/video2.jpg" alt="МГР, но покушал пельмени (RYTP)" />
+        <span>МГР, но покушал пельмени (RYTP)</span>
+      </a>
+    </div>
+  
+    <div class="video">
+      <a href="Videos/video1.html">
+        <img src="Videos/Thumbnails/video1.jpg" alt="Армстронг vs Райден, но бюджет равен 0" />
+        <span>Армстронг vs Райден, но бюджет равен 0</span>
+      </a>
+    </div>
+	
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.getElementById('playlists').classList.remove('active');
+      document.getElementById('videos').classList.remove('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
