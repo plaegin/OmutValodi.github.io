@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Друзья</title>
+  <title>Омут Валоди</title>
   <style>
     body {
       font-family: sans-serif;
@@ -20,24 +20,25 @@
       font-size: 2rem;
       font-weight: bold;
       color: #333;
+      text-align: center;
     }
 
     .friends {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
       padding: 1rem;
     }
 
     .friend {
       text-align: center;
-      width: 120px;
+      width: 150px;
     }
 
     .friend img {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       border-radius: 10px;
       border: 2px solid #aaa;
@@ -79,40 +80,76 @@
     .footer-links a:hover {
       color: #0077cc;
     }
+
+    /* Адаптивность под мобильные устройства */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      .friend {
+        width: 120px;
+      }
+
+      .friend img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .footer-links a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    Наша дружеская беседа
+    Омут Валоди
   </header>
 
   <section class="friends">
     <div class="friend">
-      <a href="pages/alex.html">
-        <img src="images/alex.jpg" alt="Алекс">
-        <span>Алекс</span>
+      <a href="Personal Pages/NikDan/NikDan.html">
+        <img src="Images/nikdan.png" alt="НикДан">
+        <span>НикДан</span>
       </a>
     </div>
     <div class="friend">
-      <a href="pages/irina.html">
-        <img src="images/irina.jpg" alt="Ирина">
-        <span>Ирина</span>
+      <a href="Personal Pages/An-Ha/An-Ha.html">
+        <img src="Images/an-ha.png" alt="Андрюха">
+        <span>Андрюха</span>
       </a>
     </div>
     <div class="friend">
-      <a href="pages/maks.html">
-        <img src="images/maks.jpg" alt="Макс">
-        <span>Макс</span>
+        <img src="Images/tyoma.png" alt="Тёма">
+        <span>Тёма</span>
       </a>
     </div>
-    <!-- Добавьте других участников аналогично -->
+    <div class="friend">
+        <img src="Images/nikich.png" alt="Никич">
+        <span>Никич</span>
+      </a>
+    </div>
+    <div class="friend">
+        <img src="Images/alexey.png" alt="Лёха">
+        <span>Лёха</span>
+      </a>
+    </div>
   </section>
 
   <footer>
     <div class="footer-links">
-      <a href="pages/films.html">Фильмография</a>
-      <a href="pages/music.html">Музыка</a>
-      <a href="pages/events.html">События</a>
+      <a href="Pages/Films/playlists.html">Фильмография</a>
+      <a href="Pages/Music/music.html">Музыка</a>
+      <a href="Pages/Events/events.html">События</a>
     </div>
   </footer>
 </body>

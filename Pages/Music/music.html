@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    .friends {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    .friend {
+      text-align: center;
+      width: 150px;
+    }
+
+    .friend img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      transition: transform 0.2s;
+    }
+
+    .friend img:hover {
+      transform: scale(1.05);
+    }
+
+    .friend a {
+      display: block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .friend a:hover {
+      color: #0077cc;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .footer-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: #0077cc;
+    }
+
+    /* Адаптивность под мобильные устройства */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 1rem;
+      }
+
+      .friend {
+        width: 120px;
+      }
+
+      .friend img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .footer-links a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+
+  <header>
+    Тут пока пусто
+  </header>
