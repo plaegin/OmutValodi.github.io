@@ -1,19 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-      <h1>Добро Пожаловать в ОМУТ ВАЛОДИ (Мама, я разраб!!!! AN-HA)</h1>  
-      <p><a href="TestFolder/Anha.html" target="_blank">
-			Страничка Андрюхии</a></p>
-    </main>
-    <script src="index.js"></script>
-  </body>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Друзья</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .friends {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .friend {
+      text-align: center;
+      width: 120px;
+    }
+
+    .friend img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      transition: transform 0.2s;
+    }
+
+    .friend img:hover {
+      transform: scale(1.05);
+    }
+
+    .friend a {
+      display: block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .friend a:hover {
+      color: #0077cc;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .footer-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Наша дружеская беседа
+  </header>
+
+  <section class="friends">
+    <div class="friend">
+      <a href="pages/alex.html">
+        <img src="images/alex.jpg" alt="Алекс">
+        <span>Алекс</span>
+      </a>
+    </div>
+    <div class="friend">
+      <a href="pages/irina.html">
+        <img src="images/irina.jpg" alt="Ирина">
+        <span>Ирина</span>
+      </a>
+    </div>
+    <div class="friend">
+      <a href="pages/maks.html">
+        <img src="images/maks.jpg" alt="Макс">
+        <span>Макс</span>
+      </a>
+    </div>
+    <!-- Добавьте других участников аналогично -->
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="pages/films.html">Фильмография</a>
+      <a href="pages/music.html">Музыка</a>
+      <a href="pages/events.html">События</a>
+    </div>
+  </footer>
+</body>
 </html>
